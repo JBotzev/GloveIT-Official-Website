@@ -7,7 +7,13 @@ body {
   font-size: 18px;
 }
 
+.landing-page:before {
+  background-color: black;
+}
+
 .landing-page {
+  position: fixed;
+  width: 100%;
   height: 100vh;
   background-image: url(../images/clouds.jpg);
   background-position: center center;
@@ -41,13 +47,14 @@ body {
   position: absolute;
   top: 100vh;
   width: 100%;
-  box-shadow: 0px 27px 30px 30px black;
+
 }
 
 .f-images {
   margin-top: 3px;
   width: 100%;
 }
+
 @media only screen and (min-width: 992px) {
   .left-section {
     float: left;
@@ -61,13 +68,18 @@ body {
 }
 
 .section-wrapper {
-  background-color: #fef366;
   position: relative;
   width: 100%;
 }
 
+.section-transition {
+  background-color: #efefef;
+  height: 35vh;
+}
+
 .content-title {
   font-size: 3vw;
+  padding-left: 5%;
 }
 
 .content-subtitle {
@@ -78,4 +90,63 @@ body {
 
 .inner-container {
   padding: 5%;
+}
+
+.learn-more-features {
+  margin-left: 15%;
+  width: fit-content;
+}
+
+button {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1vw;
+  border: 2px solid black;
+  background-color: rgba(0,0,0,0);
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.social {
+  display: flex;
+	width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social a {
+  margin: 10px;
+  height: 35px;
+}
+.social a img:hover {
+	transition: 0.5s;
+  opacity: 1;
+}
+
+.social a img {
+  opacity: 0.3;
+	width: 35px;
+  height: 35px;
+	transition: 0.5s;
+}
+
+footer {
+  background-color: #efefef;
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom p {
+  margin-right: auto;
+  margin-left: auto;
 }
