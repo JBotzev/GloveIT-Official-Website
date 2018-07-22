@@ -1,29 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
+  font-family: Montserrat;
   margin: 0;
   padding: 0;
   font-size: 18px;
 }
 
 .landing-page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100vh;
   background-image: url(../images/clouds.jpg);
   background-position: center center;
   background-size: cover;
+  box-shadow: 0px 20px 30px 30px black;
+}
+
+.title {
+	position: absolute;
+    left: 17%;
+    top: 20%;
+    width: 70%;
+    text-align: left;
+    font-size: 5vw;
+}
+
+.title div {
+  text-transform: uppercase;
+	padding: 1%;
+	margin: 2%;
+	background-color: black;
+	color: white;
+    float:left;
+    clear:left;
 }
 
 .main-container {
+  display: grid;
   background-color: white;
   z-index: 10;
   position: absolute;
   top: 100vh;
   width: 100%;
-  box-shadow: 0px 0px 50px 10px black;
+  box-shadow: 0px 27px 30px 30px black;
 }
 
+.f-images {
+  margin-top: 3px;
+  width: 100%;
+}
 @media only screen and (min-width: 992px) {
   .left-section {
     float: left;
@@ -36,18 +60,22 @@ body {
   }
 }
 
+.section-wrapper {
+  background-color: #fef366;
+  position: relative;
+  width: 100%;
+}
 
+.content-title {
+  font-size: 3vw;
+}
 
+.content-subtitle {
+  font-size: 2vw;
+  padding: 5%;
+  text-align: left;
+}
 
 .inner-container {
   padding: 5%;
-}
-
-.inner-container p {
-  text-align: center;
-}
-
-#wallet {
-  position: relative;
-  width: 100%;
 }
