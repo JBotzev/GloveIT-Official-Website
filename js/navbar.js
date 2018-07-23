@@ -1,6 +1,5 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-
     if (scroll >= 100) {
         $('.navigation-bar').addClass('black');
     } else {
@@ -26,5 +25,11 @@ function myFunction() {
     $('.navigation-bar').removeClass('show-white');
     i = 0;
   }
+}
 
+function closeMenu() {
+  $('#nav-icon').toggleClass('open');
+  $('.drop-down').removeClass('show');
+  $('.navigation-bar').removeClass('show-white');
+  i = 0;
 }

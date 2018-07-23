@@ -58,10 +58,42 @@ nav ul li a:hover {
 
 .navigation-bar.black ~ .drop-down {
   transition: 0.3s;
-  top: 68.4px;
+  top: 48.4px;
 }
 
 @media only screen and (max-width: 992px) {
+
+  .section-transition {
+    height: auto;
+  }
+
+  .bottom {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .section.subscribe {
+    font-size: 3vw;
+  }
+
+  #logo-image {
+    width: 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .mastermind {
+    width: 25%;
+    font-size: 2vw;
+    margin: 2%;
+  }
+
   .title {
     font-size: 7vw;
     width: 100vw;
@@ -76,7 +108,7 @@ nav ul li a:hover {
 
   form button {
     padding-left: 10px;
-    padding-right: 10xp;
+    padding-right: 10px;
   }
 
   button {
@@ -93,6 +125,7 @@ nav ul li a:hover {
 
   .navigation-bar {
     padding-bottom: 9px;
+    padding-top: 9px;
   }
 
   .navigation-bar.black {
@@ -119,9 +152,9 @@ nav ul li a:hover {
 
 #nav-icon {
   opacity: 0.5;
-  width: 40px;
-  height: 30px;
-  margin-top: 10.2px;
+  width: 30px;
+  height: 15px;
+  margin-top: 8px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -163,11 +196,11 @@ nav ul li a:hover {
 }
 
 #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
-  top: 13.33333px;
+  top: 7.5px;
 }
 
 #nav-icon span:nth-child(4) {
-  top: 26.33333px;
+  top: 15px;
 }
 
 #nav-icon.open span:nth-child(1) {
@@ -207,7 +240,7 @@ nav ul li a:hover {
 
 .drop-down {
   box-shadow: 0px 10px 50px -17px black;
-  top: 83.4px;
+  top: 48.4px;
   transition: 0.3s;
 }
 

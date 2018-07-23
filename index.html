@@ -27,9 +27,9 @@
           <nav>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#features">Features</a></li>
+              <!-- <li><a href="#features">Features</a></li> -->
               <li><a href="#team">Team</a></li>
+              <li><a href="#social">Social Events</a></li>
               <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
@@ -47,19 +47,19 @@
       <!-- DROP DOWN -->
       <div class="drop-down">
         <ul>
-          <li><a href="#home"><div class="drop-link-wrapper">
+          <li><a href="#home" onclick="closeMenu()"><div class="drop-link-wrapper">
             Home
           </div></a></li>
-          <li><a href="#about"><div class="drop-link-wrapper">
-            About Us
-          </div></a></li>
-          <li><a href="#features"><div class="drop-link-wrapper">
+          <!-- <li><a href="#features"><div class="drop-link-wrapper">
             Features
-          </div></a></li>
-          <li><a href="#team"><div class="drop-link-wrapper">
+          </div></a></li> -->
+          <li><a href="#team" onclick="closeMenu()"><div class="drop-link-wrapper">
             Team
           </div></a></li>
-          <li><a href="#contacts"><div class="drop-link-wrapper">
+          <li><a href="#social" onclick="closeMenu()"><div class="drop-link-wrapper">
+            Social Events
+          </div></a></li>
+          <li><a href="#contacts" onclick="closeMenu()"><div class="drop-link-wrapper">
             Contacts
           </div></a></li>
         </ul>
@@ -77,9 +77,6 @@
       </div>
       <!-- MAIN CONTAINER -->
       <div class="main-container"  id="main">
-        <div class="section-transition">
-
-        </div>
         <!-- WALLET -->
         <div class="section-wrapper">
           <div class="section">
@@ -141,7 +138,79 @@
           </div>
         </div>
         <!-- END GREETING -->
-        <div class="section-transition" style="height: auto;">
+        <div class="section-transition" id="team">
+
+        </div>
+        <!-- TEAM -->
+        <div class="section-wrapper">
+          <div class="section">
+            <p class="content-title" id="our-team">Our Team</p>
+              <div class="inner-container">
+                <div class="first-row">
+                  <div class="mastermind">
+                    <img src="images/stefan.jpg">
+                    <div class="text">
+                      <h3>Stefan</h3>
+                      <p>This mastermind studies mechatronics at KIT Karlsruhe and is head of the project organisation.</p>
+                    </div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/stan.jpg">
+                    <div class="text">
+                      <h3>Stan</h3>
+                      <p>This mastermind studies informatics at KIT Karlsruhe and is head of the SmartHome department</p>
+                    </div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/joan.jpg">
+          					<div class="text">
+          						<h3>Joan</h3>
+          						<p>This mastermind studies informatics at KIT Karlsruhe and is part of the SmatHome department</p>
+          					</div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/sasho.jpg">
+                    <div class="text">
+                      <h3>Alexander</h3>
+                      <p>This mastermind studies electrical engineering at RWTH Aachen and is head of the Hardware department</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="second-row">
+                  <div class="mastermind">
+                    <img src="images/martoLQ.jpg">
+          					<div class="text">
+          						<h3>Martin</h3>
+          						<p>This mastermind studies informatics at KIT Karlsruhe ad is head of the GloveiT Greet department</p>
+          					</div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/icoLQ.jpg">
+          					<div class="text">
+          						<h3>Hristo</h3>
+          						<p>This mastermind studies informatics at KIT Karlsruhe and is head of GloveiT ID department</p>
+          					</div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/ico2.jpg">
+          					<div class="text">
+          						<h3>Hristo</h3>
+          						<p>Studies informatics at TU Illmenau and is a development consultant</p>
+          					</div>
+                  </div>
+                  <div class="mastermind">
+                    <img src="images/krisLQ.jpg">
+                    <div class="text">
+                      <h3>Kris</h3>
+                      <p>Studies electrical engineering at KIT Karlsruhe and is part of the Hardware department</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- END TEAM -->
+        <div class="section-transition" style="height: auto;" id="social">
           <p class="content-title" style="text-align: center">Social Events</p>
 					<p class="content-subtitle" style="text-align: center; padding: 2%;">
             We are a developer team made out of students in Europe and we<br />
@@ -150,8 +219,8 @@
 						science fair in Germany.</p>
         </div>
         <!-- SOCIAL EVENTS -->
-        <div class="section-wrapper">
-          <div class="section" style="text-align: center">
+        <div class="section-wrapper" id="contacts">
+          <div class="section subscribe" style="text-align: center">
             <p>Subscribe to be the first to know about our launch.</p>
             <form>
               <div>
@@ -166,9 +235,8 @@
         </div>
         <!-- END SOCIAL EVENTS -->
         <!-- FOOTER -->
-        <footer>
+        <footer id="contacts">
           <div class="section">
-
             <div class="social">
               <a href="https://www.facebook.com/GloveiT-213555956152985/"><img src="images/facebook.png"/></a>
               <a href="https://twitter.com/it_glove"><img src="images/twitter.png" /></a>
@@ -176,7 +244,8 @@
               <a href="https://www.facebook.com/"><img src="images/link.png" /></a>-->
             </div>
             <div class="bottom">
-                <p>Website is in development.</p>
+              <p>For contact: 0049 1636 404304 / 0049 1577 8227673</br>gloveit@outlook.com</p>
+              <p>Website is in development.</p>
             </div>
           </div>
         </footer>

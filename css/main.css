@@ -110,8 +110,7 @@ html, body {
 }
 
 .section-transition {
-  /* background-color: #efefef; */
-  background-color: white;
+  background-color: #efefef;
   height: 15vh;
 }
 
@@ -128,6 +127,32 @@ html, body {
 
 .inner-container {
   padding: 5%;
+}
+
+.first-row {
+  display: flex;
+}
+
+.second-row {
+  display: flex;
+}
+
+#our-team {
+  text-align: center;
+  padding: 1%;
+  text-align: center;
+  background-color: darkcyan;
+  margin: 0;
+}
+
+.mastermind {
+  width: 15%;
+  margin: 5%;
+}
+
+.mastermind img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .learn-more-features {
