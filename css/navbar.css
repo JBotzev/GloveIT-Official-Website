@@ -51,3 +51,7 @@ nav ul a:hover {
   background-color: white;
   padding: 0;
 }
+
+.navigation-bar.black #up-arrow {
+  display: block;
+}
