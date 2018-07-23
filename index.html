@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
 		    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-
+        <link rel="shortcut icon" href="images/logo_st.png" />
         <title>GloveIT</title>
         <!-- CSS -->
         <link href="css/main.css" type="text/css" rel="stylesheet" />
@@ -33,10 +33,38 @@
               <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
+          <div id="nav-icon" onclick="myFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <a href="#home" id="up-arrow"><img src="images/up.png" alt="up-arrow"></a>
+        <a href="#home" id="up-arrow" class="up-arrow"><img src="images/up.png" alt="up-arrow"></a>
+
       </div>
       <!-- END NAVITGATION -->
+      <!-- DROP DOWN -->
+      <div class="drop-down">
+        <ul>
+          <li><a href="#home"><div class="drop-link-wrapper">
+            Home
+          </div></a></li>
+          <li><a href="#about"><div class="drop-link-wrapper">
+            About Us
+          </div></a></li>
+          <li><a href="#features"><div class="drop-link-wrapper">
+            Features
+          </div></a></li>
+          <li><a href="#team"><div class="drop-link-wrapper">
+            Team
+          </div></a></li>
+          <li><a href="#contacts"><div class="drop-link-wrapper">
+            Contacts
+          </div></a></li>
+        </ul>
+      </div>
+      <!-- END DROP DOWN -->
       <div id="home">
       </div>
       <div class="landing-page">
@@ -45,7 +73,7 @@
           <div id="secondline">new everyday life</div>
           <div id="thirdline">in which. . .</div>
         </div>
-        <a href="#main"><img src="images/up.png" alt="up-arrow" id="down-arrow"></a>
+        <a href="#main" class="up-arrow"><img src="images/up.png" alt="up-arrow" id="down-arrow"></a>
       </div>
       <!-- MAIN CONTAINER -->
       <div class="main-container"  id="main">

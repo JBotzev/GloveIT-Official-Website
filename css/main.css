@@ -32,7 +32,9 @@ html, body {
   transform: rotate(90deg);
 }
 
-#up-arrow img {
+.up-arrow img {
+  transition: 0.3s;
+  opacity: 0.3;
   width: 40px;
 }
 
@@ -45,6 +47,11 @@ html, body {
   bottom: 5%;
   z-index: 900;
   transform: rotate(-90deg);
+}
+
+.up-arrow img:hover {
+  transition: 0.3s;
+  opacity: 1;
 }
 
 .title {
@@ -91,6 +98,10 @@ html, body {
     float: right;
     width: 50%;
   }
+
+  #nav-icon {
+    display: none;
+  }
 }
 
 .section-wrapper {
@@ -99,8 +110,9 @@ html, body {
 }
 
 .section-transition {
-  background-color: #efefef;
-  height: 35vh;
+  /* background-color: #efefef; */
+  background-color: white;
+  height: 15vh;
 }
 
 .content-title {
@@ -176,7 +188,6 @@ form div {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 424px;
 }
 
 input {
