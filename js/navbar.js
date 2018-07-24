@@ -5,6 +5,11 @@ $(window).scroll(function() {
     } else {
         $('.navigation-bar').removeClass('black');
     }
+    if (scroll >= 800) {
+      document.getElementById("landing-page").style.opacity = "0";
+    } else {
+      document.getElementById("landing-page").style.opacity = "1";
+    }
 });
 
 $(document).ready(function(){

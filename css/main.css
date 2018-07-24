@@ -8,10 +8,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-.landing-page:before {
-  background-color: black;
-}
-
 .landing-page {
   position: fixed;
   width: 100%;
@@ -23,22 +19,28 @@ html, body {
 }
 
 #down-arrow {
+  opacity: 0.3;
   position: fixed;
   width: 40px;
   height: 40px;
   left: 50%;
   margin-left: -15px;
   bottom: 2%;
+  width: 40px;
   transform: rotate(90deg);
+}
+
+
+#down-arrow:hover {
+  transition: 0.3s;
+  opacity: 1;
 }
 
 .up-arrow img {
   transition: 0.3s;
   opacity: 0.3;
   width: 40px;
-}
-
-#up-arrow {
+  transform: rotate(-90deg);
   display: none;
   position: fixed;
   width: 40px;
@@ -46,7 +48,6 @@ html, body {
   right: 5%;
   bottom: 5%;
   z-index: 900;
-  transform: rotate(-90deg);
 }
 
 .up-arrow img:hover {
@@ -178,6 +179,16 @@ button:hover {
   transition: 0.5s;
 }
 
+form button {
+        background-color: black;
+        color: white;
+}
+
+form button:hover {
+        background-color: white;
+        color: black;
+}
+
 .social {
   display: flex;
 	width: fit-content;
@@ -229,4 +240,11 @@ input {
 .bottom p {
   margin-right: auto;
   margin-left: auto;
+}
+
+.copyright {
+  border-top: 1px solid black;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
 }
