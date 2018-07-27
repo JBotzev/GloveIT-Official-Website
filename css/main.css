@@ -81,12 +81,16 @@ html, body {
   position: absolute;
   top: 100vh;
   width: 100%;
-
 }
 
 .f-images {
   margin-top: 3px;
   width: 100%;
+}
+
+.section.subscribe div {
+  position: relative;
+  bottom: -5px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -111,7 +115,7 @@ html, body {
 }
 
 .section-transition {
-  background-color: #efefef;
+  background-color: white;
   height: 15vh;
 }
 
@@ -140,10 +144,14 @@ html, body {
 
 #our-team {
   text-align: center;
-  padding: 1%;
+  padding: 3%;
   text-align: center;
-  background-color: darkcyan;
+  background-color: #efefef;
   margin: 0;
+}
+
+#team-container {
+  padding: 0;
 }
 
 .mastermind {
@@ -162,6 +170,9 @@ html, body {
 }
 
 button {
+  background-color: rgba(0,0,0,0);
+  color: black;
+  outline: none;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -169,7 +180,6 @@ button {
   padding-right: 25px;
   font-size: 1vw;
   border: 2px solid black;
-  background-color: rgba(0,0,0,0);
   transition: 0.5s;
 }
 
@@ -187,6 +197,10 @@ form button {
 form button:hover {
         background-color: white;
         color: black;
+}
+
+#subscribe-launch {
+  transition: 1s;
 }
 
 .social {
@@ -227,6 +241,9 @@ form div {
 }
 
 input {
+  border: none;
+  background-color: #efefef;
+  outline: none;
   padding-left: 10px;
   width: 220px;
   font-size: 15px;
@@ -247,4 +264,43 @@ input {
   width: 100%;
   font-size: 15px;
   text-align: center;
+}
+
+.fade {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -38,3 +38,26 @@ function closeMenu() {
   $('.navigation-bar').removeClass('show-white');
   i = 0;
 }
+
+function subscribed() {
+  var text = document.getElementById("subscribe-launch"),
+  moreText = "We'll reach back to you soon!";
+  text.classList.add("fade");
+  text.innerHTML = moreText;
+}
+
+function nopage(a) {
+  var text;
+  if (a == 1) {
+    text = document.getElementById("button1");
+  }
+  if (a == 2) {
+    text = document.getElementById("button2");
+  }
+  if (a == 3) {
+    text = document.getElementById("button3");
+  }
+  var moreText = "Comming soon";
+  text.classList.add("fade");
+  text.innerHTML = moreText;
+}
