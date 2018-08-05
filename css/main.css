@@ -94,6 +94,14 @@ html, body {
 }
 
 @media only screen and (min-width: 992px) {
+  .content-title {
+    text-align: center;
+  }
+
+  .content-subtitle {
+    text-align: center;
+  }
+
   .left-section {
     float: left;
     width: 50%;
@@ -111,15 +119,17 @@ html, body {
 
 .section-wrapper {
   position: relative;
+  box-shadow: 0px 0px 20px -6px black;
   width: 100%;
 }
 
 .section-transition {
-  background-color: white;
+  background-color: #ececec;
   height: 15vh;
 }
 
 .content-title {
+  text-align: left;
   font-size: 3vw;
   padding-left: 5%;
 }
@@ -208,6 +218,12 @@ form button:hover {
 	width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+#social .content-subtitle {
+  text-align: center;
+  padding: 2%;
+  font-size: 1.5vw;
 }
 
 .social a {
