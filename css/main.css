@@ -119,13 +119,11 @@ html, body {
 
 .section-wrapper {
   position: relative;
-  box-shadow: 0px 0px 20px -6px black;
   width: 100%;
 }
 
 .section-transition {
-  background-color: #ececec;
-  height: 15vh;
+  height: 10vh;
 }
 
 .content-title {
