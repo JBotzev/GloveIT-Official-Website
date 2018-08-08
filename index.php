@@ -224,8 +224,17 @@
             <p id="subscribe-launch">Subscribe to be the first to know about our launch.</p>
             <form>
               <div>
-                <input type="email" placeholder="Email Adress" required="required"
+                <input name="email" type="email" placeholder="Email Adress" required="required"
                 pattern="[a-zA-Z0-9!#$%'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+
+                <?php
+
+                  include_once "php/class.verifyEmail.php";
+                  $vmail = new verifyEmail();
+                  $isEmailValid = $vmail->check($_POST['email']);
+
+                ?>
+
                 <button type="submit" id="button" onclick="subscribed()">Subscribe Now</button>
               </div>
             </form>
