@@ -227,11 +227,30 @@
                 <input name="email" type="email" placeholder="Email Adress" required="required"
                 pattern="[a-zA-Z0-9!#$%'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
 
+                <input name="name" type="text" placeholder="Your Name" required="required">
+
                 <?php
 
                   include_once "php/class.verifyEmail.php";
+                  require_once "php/db_connection.php";
+                  include_once "php/sendEmail.php";
+                  $email = $_POST['email'];
+                  $name = $_POST['name'];
                   $vmail = new verifyEmail();
-                  $isEmailValid = $vmail->check($_POST['email']);
+                  $isEmailValid = $vmail->check($email);
+
+                  try {
+                    $sql = 'INSERT INTO MailingList (Email, Name) VALUES ($email, $name)';
+                 
+                    $q = $connection->query($sql);
+                    $q->setFetchMode(PDO::FETCH_ASSOC);
+
+                    if ($q) {
+                      sendEmail($email, $name);
+                    }
+                } catch (PDOException $e) {
+                    die("Could not connect to the database $dbname :" . $e->getMessage());
+                }
 
                 ?>
 
